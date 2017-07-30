@@ -20,5 +20,5 @@ if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition(geo_success, geo_error, geo_options);
   var wpid = navigator.geolocation.watchPosition(wgeo_success, geo_error, geo_options);
 } else {
-  /* geolocation IS NOT available */
+  alert("Geolocation not available");
 }
